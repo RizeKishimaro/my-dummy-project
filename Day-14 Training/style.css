@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@500&family=Roboto&family=Titillium+Web&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: black;
+}
+.heading-title{
+    text-align: center;
+}
+.container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    text-align: center;
+    flex-wrap: nowrap;
+    align-content: center;
+}
+.item-ccontainer{
+    display: inline-block;
+}
+.items{
+    width: 205px;
+    height: auto;
+    display: inline-block;
+    padding: 10px;
+    text-align: left;
+}
+.c-body{
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    display: inline-block;
+}
+.about{
+    width: 100%;
+    height: 100%;
+    margin-top: -60px;
+    margin-left: 20px;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+
+}
+.about .new-text{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.user{
+    font-size: 15px;
+    opacity: 0.6;
+    display: inline-block;
+}
+.account{
+    text-decoration: none;
+    margin-top: -60px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+ul{
+    display: inline-block;
+}
+.new-title{
+    align-content: top;
+    margin-bottom: 20px;
+    display: inline-block;
+    font-family: 'Arimo', sans-serif;
+}
+.video{
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    width: 100%;
+    display: block;
+    height: 250px;
+}
+.c-body{
+    border-radius: 20px;
+    border: none;
+    margin: 10px;
+}
+.image{
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 100%;
+    margin-left: -60px;
+    overflow: hidden;
+}
+.uploader{
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-size: cover;
+}
