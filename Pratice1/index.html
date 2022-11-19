@@ -8,36 +8,58 @@
     <link rel="stylesheet" href="/my-dummy-project/node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="/my-dummy-project/node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: #000;
+        }
+    </style>
 </head>
 <body>
-    <div style='height: 100vh; background-image: url(/my-dummy-project/assests/wallpaper.jpg); background-repeat: no-repeat; background-size:auto; position: relative;'>
-        <div class="d-inline-flex w-100 bg-dark rounded-pill mt-2 overflow-hidden justify-content-between justify-content-center" style="height: 35px; margin-top: -5px;">
-            <div class="icons" style="padding-bottom: 10px; cursor: pointer;">
-                <i class="bi bi-house fs-3 p-3 text-light"></i>
-            </div>
-            <div class="status-container w-25 d-flex justify-content-end">
-                <div class="battery d-flex align-top">
-                    <i class="bi bi-wifi text-white text-warp" style="font-size: 22px; margin:0 10px;margin-top: 1px;"></i>
-                    <i class="bi bi-volume-down-fill text-white" style="font-size: 26px; margin: 0 10px;"></i>
-                    <i class="bi bi-battery-charging text-light me-2" style="font-size: 24px; margin-right: 20px;"></i>
+    <nav class="container-menu">
+        <div class="image"><img src="/my-dummy-project/assests/luka.jpg" class="image-logo" alt="brand"></div>
+        <div class="menu-links">
+            <a href="#" class="menu-items">Sample</a>
+            <a href="#" class="menu-items">Sample</a>
+            <a href="#" class="menu-items">Sample</a>
+            <a href="#" class="menu-items">Sample</a>
+            <a href="#" class="menu-items">Sample</a>
+        </div>
+    </nav>
+    <div class="container-fluid flex">
+        <div class="row g-0">
+            <div class="col-sm-12 col-md-12 col-lg-3 m-0 bg-light p-0" style="height: 100vh;">
+                <div class="bg-light py-5 p-4 d m-3 border border-2 border-primary rounded-2 ">
+                    <form action="#" class=" d-flex flex-column justify-content-between">
+                        <h5 class="text text-info">Subescribe Our news Letter</h5>
+                        <div class=" m-3">
+                            <label for="form-email" class="mb-2 form-label">Enter Your Email</label>
+                            <input type="email" name="email" class="form-control border-primary" id="form-email" placeholder="eg.sample@gmail.com">
+                        </div>
+                       <div class=" m-3">
+                        <label for="form-comment" class="form-label text text-primary">Your Comment</label>
+                        <textarea name="form-control" id="form-comment" class="rounded-2 border-primary" rows="5"></textarea>
+                       </div>
+                       <div class=" m-3  h-100 ">
+                            <button class="btn btn-primary"><i class="bi bi-pen me-1"></i>Submit</button>
+                       </div>
+                    </form>
                 </div>
             </div>
-        </div>
-        <div class="wallpaper d-flex flex-column m-4">
-            <div class="folder m-2 d-inline-block">
-                <i class="bi bi-folder text-primary" style="font-size: 70px;"></i>
-                <p class="text-white">Dummie<br>Folder</p>
-
+            <div class="col-7 bg-warning" style="height: 100vh;">
+                <div class="bg-warning">
+                    <div class="bg-light h-50"></div>
+                </div>
             </div>
-            <div class="folder m-2 d-inline-block">
-                <i class="bi bi-folder text-primary" style="font-size: 70px;"></i>
-                <p class="text-white">Dummie<br>Folder</p>
-
+            <div class="col-2">
+                <div class="bg-light py-5"></div>
             </div>
-        </div>
-        <div class="w-100 bg-dark bg-opacity-75 " style="height: 45px;">
-            
         </div>
     </div>
 </body>
+<script src="/my-dummy-project/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+<script src="/my-dummy-project/Pratice1/script.js"></script>
 </html>
