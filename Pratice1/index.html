@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="/my-dummy-project/node_modules/bootstrap/dist/js/bootstrap.bundle.js">
     <link rel="stylesheet" href="/my-dummy-project/node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="/my-dummy-project/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="/my-dummy-project/Pratice1/style.css">
     <title>Document</title>
     <style>
         *{
@@ -14,24 +18,52 @@
             padding: 0;
         }
         body{
-            background: #000;
+            /* background: white; */
+            height: 4000px;
+
         }
     </style>
 </head>
-<body>
-    <nav class="container-menu">
-        <div class="image"><img src="/my-dummy-project/assests/luka.jpg" class="image-logo" alt="brand"></div>
-        <div class="menu-links">
-            <a href="#" class="menu-items">Sample</a>
-            <a href="#" class="menu-items">Sample</a>
-            <a href="#" class="menu-items">Sample</a>
-            <a href="#" class="menu-items">Sample</a>
-            <a href="#" class="menu-items">Sample</a>
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg bg-light fixed-top position-relative">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" style="font-family: Anton;">Howdy</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
         </div>
-    </nav>
-    <div class="container-fluid flex">
-        <div class="row g-0">
-            <div class="col-sm-12 col-md-12 col-lg-3 m-0 bg-light p-0" style="height: 100vh;">
+      </nav>
+    <div class="container-fluid flex mt-3">
+        <div class="row ">
+            <div class="col-sm-12 col-md-12 col-lg-3 m-0 bg-light p-0 position-fixed" style="height: 100vh;">
                 <div class="bg-light py-5 p-4 d m-3 border border-2 border-primary rounded-2 ">
                     <form action="#" class=" d-flex flex-column justify-content-between">
                         <h5 class="text text-info">Subescribe Our news Letter</h5>
