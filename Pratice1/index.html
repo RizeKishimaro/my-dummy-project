@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
     <link rel="stylesheet" href="/my-dummy-project/node_modules/bootstrap/dist/js/bootstrap.bundle.js">
     <link rel="stylesheet" href="/my-dummy-project/node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="/my-dummy-project/node_modules/bootstrap-icons/font/bootstrap-icons.css">
@@ -22,11 +22,16 @@
             height: 4000px;
 
         }
+        @media screen and (max-width: 1000px) {
+          .signin-box{
+            display: none;
+          }
+        }
     </style>
 </head>
-<body class="bg-light">
-    <nav class="navbar navbar-expand-lg bg-light fixed-top position-relative">
-        <div class="container-fluid">
+<body class="bg-light d-flex flex-column ">
+    <nav class="navbar navbar-expand-lg bg-light fixed-top border-bottom">
+        <div class="container-fluid p-2">
           <a class="navbar-brand" href="#" style="font-family: Anton;">Howdy</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -34,20 +39,21 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a href="#" class="nav-link ">Entertainment</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Login</a>
+              </li>
+              <li class="nav-item dropdown" aria-current="page">
+                <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Dropdown
                 </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <ul class="dropdown-menu p-1">
+                  <li><a class="dropdown-item active" href="#">About Vocaloid</a></li>
+                  <li><a class="dropdown-item" href="#">Install Maleware</a></li>
                 </ul>
               </li>
               <li class="nav-item">
@@ -61,19 +67,20 @@
           </div>
         </div>
       </nav>
-    <div class="container-fluid flex mt-3">
+      <hr>
+    <div class="container-fluid flex mt-5 h-100">
         <div class="row ">
-            <div class="col-sm-12 col-md-12 col-lg-3 m-0 bg-light p-0 position-fixed" style="height: 100vh;">
-                <div class="bg-light py-5 p-4 d m-3 border border-2 border-primary rounded-2 ">
+            <div class="col-sm-12 col-md-12 col-lg-3 m-0 bg-light p-0 shadow signin-box " style="height: 100vh; overflow-y: scroll;">
+                <div class="bg-light py-5 p-4 d m-3 border border-2 border-primary rounded-2" id="signin" >
                     <form action="#" class=" d-flex flex-column justify-content-between">
                         <h5 class="text text-info">Subescribe Our news Letter</h5>
                         <div class=" m-3">
-                            <label for="form-email" class="mb-2 form-label">Enter Your Email</label>
+                            <label for="form-email" class="mb-2 form-label text text-primary">Enter Your Email</label>
                             <input type="email" name="email" class="form-control border-primary" id="form-email" placeholder="eg.sample@gmail.com">
                         </div>
                        <div class=" m-3">
                         <label for="form-comment" class="form-label text text-primary">Your Comment</label>
-                        <textarea name="form-control" id="form-comment" class="rounded-2 border-primary" rows="5"></textarea>
+                        <textarea name="form-control" id="form-comment" class=" form-control rounded-2 border-primary d-block" rows="5"></textarea>
                        </div>
                        <div class=" m-3  h-100 ">
                             <button class="btn btn-primary"><i class="bi bi-pen me-1"></i>Submit</button>
@@ -81,17 +88,74 @@
                     </form>
                 </div>
             </div>
-            <div class="col-7 bg-warning" style="height: 100vh;">
-                <div class="bg-warning">
-                    <div class="bg-light h-50"></div>
-                </div>
+            <div class=" col-md-10 col-sm-12 col-lg-7 border-end border-start m-2 mx-auto overflow-scroll"style="height: 100vh;">
+               <div class="">
+                  <div class=" text-center mt-3">
+                    <h1 class="text text-primary">About Vocaloids</h1>
+                    <div class="p-2" style="letter-spacing: 1px;">
+                      <p>Vocaloid (ボーカロイド, Bōkaroido) is a singing voice syntdesizer software product. Its signal processing part was developed tdrough a joint research project led by Kenmochi Hideki at tde Pompeu Fabra University in Barcelona, Spain, in 2000 and was not originally intended to be a full commercial project.[1] Backed by tde Yamaha Corporation, it developed tde software into tde commercial product "Vocaloid" tdat was released in 2004.[2][3]
+
+                        tde software enables users to syntdesize "singing" by typing in lyrics and melody and also "speech" by typing in tde script of tde required words. It uses syntdesizing technology witd specially recorded vocals of voice actors or singers. To create a song, tde user must input tde melody and lyrics. A piano roll type interface is used to input tde melody and tde lyrics can be entered on each note. tde software can change tde stress of tde pronunciations, add effects such as vibrato, or change tde dynamics and tone of tde voice.
+                        Various voice banks have been released for use with the Vocaloid synthesizer technology.[4] Each is sold as "a singer in a box" designed to act as a replacement for an actual singer.[1] As such, they are released under a moe anthropomorphism. These avatars are also referred to as Vocaloids, and are often marketed as virtual idols; some have gone on to perform at live concerts as an on-stage projection.[5]
+
+                          The software was originally only available in English starting with the first Vocaloids Leon, Lola and Miriam by Zero-G, and Japanese with Meiko and Kaito made by Yamaha and sold by Crypton Future Media. Vocaloid 3 has added support for Spanish for the Vocaloids Bruno, Clara and Maika; Chinese for Luo Tianyi, Yuezheng Ling, Xin Hua and Yanhe; and Korean for SeeU.
+
+                          The software is intended for professional musicians as well as casual computer music users.[6] Japanese musical groups such as Livetune of Toy's Factory and Supercell of Sony Music Entertainment Japan have released their songs featuring Vocaloid as vocals. Japanese record label Exit Tunes of Quake Inc. also have released compilation albums featuring Vocaloids.[7][8] Artists such as Mike Oldfield have also used Vocaloids within their work for back up singer vocals and sound samples.[9][10]
+
+                        </p>
+                    </div>
+                    <div class="">
+                      <h3>List of famous Vocaloid <br><a href="https://www.crypton.co.jp/" class="text-decoration-none"> From crypton future media.INC</a></h3>
+                      <div class="border border-primary rounded-2 p-3">
+                        <table class="table table-striped">
+                          <thead>
+                            <tr>
+                              <th scope="col" >No</td>
+                              <th scope="col">Name</td>
+                              <th scope="col">Age</td>
+                              <th scope="col">Gender</td>
+                              <th scope="col">Spotify</td>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row">01</td>
+                              <td>Hatsune Miku</td>
+                              <td>16</td>
+                              <td>Female</td>
+                              <td><a href="https://open.spotify.com/artist/6pNgnvzBa6Btdsv8SrZJYl">Hatsune Miku</a></td>
+                            </tr>
+                            <tr>
+                              <th scope="row">02</td>
+                              <td>Kagami Rin/Lin</td>
+                              <td>14</td>
+                              <td>Male & Female</td>
+                              <td><a href="https://open.spotify.com/playlist/4fS38DqjZFCFIRO0yEebzG">Rin & Lin</a></td>
+                            </tr>
+                            <tr>
+                              <th scope="row">03</td>
+                              <td>Megurine Luka</td>
+                              <td>20</td>
+                              <td>Female</td>
+                              <td><a href="https://open.spotify.com/playlist/0gyisEILKMJzX0YOxwAxh2">Megurine Luka</a></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+               </div>
             </div>
             <div class="col-2">
                 <div class="bg-light py-5"></div>
             </div>
         </div>
+        <div class="d-flex col-sm-12 col-lg-12 col-md-12">
+          <div class=""></div>
+          <div class=""></div>
+          <div class=""></div>
+        </div>
     </div>
 </body>
 <script src="/my-dummy-project/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-<script src="/my-dummy-project/Pratice1/script.js"></script>
 </html>
