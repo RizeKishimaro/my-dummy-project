@@ -13,6 +13,10 @@
     <link rel="stylesheet" href="/my-dummy-project/Pratice1/style.css">
     <title>Document</title>
     <style>
+      html{
+        scroll-behavior: smooth;
+        scroll-padding: 100px;
+      }
         *{
             margin: 0;
             padding: 0;
@@ -60,7 +64,7 @@
                 <a class="nav-link disabled">Disabled</a>
               </li>
             </ul>
-            <form class="d-flex" role="search">
+            <form class="d-flex " role="search">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
@@ -70,7 +74,7 @@
       <hr>
     <div class="container-fluid flex mt-5 h-100">
         <div class="row ">
-            <div class="col-sm-12 col-md-12 col-lg-3 m-0 bg-light p-0 shadow signin-box " style="height: 100vh; overflow-y: scroll;">
+            <div class="col-sm-12 col-md-12 col-lg-3 m-0 bg-light p-0 shadow signin-box position-fixed" style="height: 100vh; overflow-y: scroll;">
                 <div class="bg-light py-5 p-4 d m-3 border border-2 border-primary rounded-2" id="signin" >
                     <form action="#" class=" d-flex flex-column justify-content-between">
                         <h5 class="text text-info">Subescribe Our news Letter</h5>
@@ -88,7 +92,8 @@
                     </form>
                 </div>
             </div>
-            <div class=" col-md-10 col-sm-12 col-lg-7 border-end border-start m-2 mx-auto overflow-scroll"style="height: 100vh;">
+            <div class="col-sm-12 col-md-12 col-lg-3 m-0 bg-light p-0 shadow signin-box" style="height: 100vh; overflow-y: scroll;"></div>
+            <div class=" col-md-10 col-sm-12 col-lg-7 border-end border-start m-2 mx-auto overflow-scroll mx-lg-auto my-auto"style="height: 100vh;">
                <div class="">
                   <div class=" text-center mt-3">
                     <h1 class="text text-primary">About Vocaloids</h1>
