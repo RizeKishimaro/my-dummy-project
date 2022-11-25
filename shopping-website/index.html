@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/my-dummy-project/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/my-dummy-project/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+      *{
+        text-size-adjust: auto;
+      }
+    </style>
+    <title>Shopping Website</title>
+</head>
+<body style="background: linear-gradient(rgb(9, 126, 223),rgb(238, 34, 34),pink);">
+    <nav class="container-fluid bg-light fixed-top d-flex justify-content-between border border-bottom">
+        <div class=" navbar-brand col-2">
+            <img src="assests/logo.png" class=" p-2" style="width: 110px; border-radius: 75%; background-size: cover;" alt="logo">
+        </div>
+        <ul class=" nav justify-content-center pt-3 col-5">
+            <li class="nav-item active"> <a href="#" class=" nav-link active">HOME</a></li>
+            <li class="nav-item"> <a href="#" class=" nav-link">PRODUCTS</a></li>
+            <li class="nav-item"> <a href="#" class=" nav-link">PARTNERS</a></li>
+            <li class="nav-item"> <a href="#" class=" nav-link">CONTACT</a></li>
+        </ul>
+        <ul class=" py-3 justify-content-center col-3">
+            <a href="#" class=" btn btn-primary px-3 py-2">LOGIN</a>
+            <a href="#" class=" btn btn-outline-primary px-3 py-2">SignUp</a>
+        </ul>
+    </nav>
+    <div class=" col-12" style="padding-top: 90px;"></div>
+    <div class=" container overflow-hidden "  style="height: 500px;">
+        <div class="row justify-content-center">
+            <div class="col-10 ">
+                <div id="move" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner ">
+                      <div class="carousel-item active overflow-hidden h-50" data-bs-interval="2500">
+                        <img src="assests/lady4jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="3000">
+                        <img src="assests/lady3.webp" class="d-block w-100 overflow-hidden h-50"  style="background-size: cover;" alt="...">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="3500">
+                        <img src="assests/lady.jpg" class="d-block w-100 overflow-hidden h-50"  style="background-size: cover;" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#move" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#move" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+  <div class="container">
+    <div class=" row">
+      <h2 class=" text-center text-white mt-3">The benefit Of buying with us!</h2>
+      <div class=" col-12 g-5 d-flex justify-content-center align-items-center border-bottom  flex-row-reverse mt-5">
+        <div class="col-5 ">
+          <div class="mx-auto p-3">
+            <h3 class=" text text-primary">Big Sale</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, earum provident, qui magni dignissimos aliquam eveniet, labore assumenda est libero perspiciatis modi esse officia. Soluta, quasi pariatur quaerat magni, hic blanditiis inventore iste sunt accusantium assumenda quae a est earum corrupti quis, quia deleniti! Itaque cupiditate provident vitae inventore quod.</p>
+          </div>
+        </div>
+        <div class="col-5 mx-auto">
+          <img src="assests/off.jpg" class=" w-100" alt="">
+        </div>
+      </div>
+      <div class=" col-12 d-flex justify-content-between align-items-center border-bottom  mt-5">
+        <div class="col-5 ms-auto">
+          <div class=" p-3">
+            <h3 class=" text text-primary">Big Sale</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, earum provident, qui magni dignissimos aliquam eveniet, labore assumenda est libero perspiciatis modi esse officia. Soluta, quasi pariatur quaerat magni, hic blanditiis inventore iste sunt accusantium assumenda quae a est earum corrupti quis, quia deleniti! Itaque cupiditate provident vitae inventore quod.</p>
+          </div>
+        </div>
+        <div class="col-5 ms-auto p-4 ">
+          <img src="assests/off.jpg" class="w-100" alt="">
+        </div>
+      </div>
+      <div class=" col-12 d-flex justify-content-center align-items-center flex-row-reverse mt-5 p-2 ">
+        <div class="col-sm-12 col-lg-5 text-start p-3">
+          <div class=" mx-auto">
+            <h3 class=" text text-primary">Big Sale</h3>
+            <p class=" w-100">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil, earum provident, qui magni dignissimos aliquam eveniet, labore assumenda est libero perspiciatis modi esse officia. Soluta, quasi pariatur quaerat magni, hic blanditiis inventore iste sunt accusantium assumenda quae a est earum corrupti quis, quia deleniti! Itaque cupiditate provident vitae inventore quod.</p>
+          </div>
+        </div>
+        <div class="col-lg-5 col-sm-12 mx-auto">
+          <img src="assests/off.jpg" class=" w-100" alt="">
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <footer>
+    <div class=" container-fluid bg-black">
+      <div class="row">
+        <div class="col-12 d-flex justify-content-center flex-row-reverse">
+          <div class=" col-lg-2 col-sm-12 mt-3 text-center p-2 text-white">
+            <h5 class=" text-white">Follow Us On:</h5>
+            <ul class=" list-unstyled  fs-5 mt-4 d-flex justify-content-around">
+              <li><i class=" bi bi-facebook"></i></li>
+              <li><i class=" bi bi-twitter"></i></li>
+              <li><i class=" bi bi-youtube"></i></li>
+              <li><i class=" bi bi-twitch"></i></li>
+            </ul>
+          </div>
+        </div>
+        </div>
+    </div>
+  </footer>
+</body>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</html>
