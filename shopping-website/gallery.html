@@ -21,7 +21,8 @@
         margin: 10px;
       }
         .btn-hover:hover{
-          border: 1px solid black;
+          text-decoration: underline;
+          text-decoration-color: black;
           transition: 0.1s linear;
 
         }
@@ -46,7 +47,7 @@
 <body class=" bg-black">
     <nav class="navbar navbar-expand-lg bg-light border-bottom">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="./images/logo.jpg" style="width: 50px;" alt="logo"></a>
+          <a class="navbar-brand" href="#"><img src="./images/logo.jpg" style="width: 50px; height: 70px;" alt="logo"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -89,7 +90,7 @@
           </div>
         </div>
     </nav>
-    <div class=" container-fluid overflow-hidden res" style="width: 100%;">
+    <div class=" container-fluid overflow-hidden res" style="width: 100%; "  id="main-hero">
       <div class=" row justify-content-center">
         <div class="col-10">
           <div id="controls" class="carousel slide" data-bs-ride="carousel">
@@ -135,7 +136,7 @@
           <div class=" d-flex justify-content-center" style="font-size: 50px;">
             <i class=" fa-solid fa-bowl-rice text-light"></i>
           </div>
-          <div class=" d-lg-flex justify-content-center flex-column text-center" style="opacity: 0.5;">
+          <div class=" d-lg-flex justify-content-center flex-column text-center" id="scroll" style="opacity: 0.5;">
             <h3>Delicious Ramen</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat atque recusandae debitis, distinctio quasi at vel nostrum illo possimus minima culpa cumque voluptas laborum! Magnam laboriosam dolor accusamus ratione beatae?</p>
           </div>
@@ -152,7 +153,7 @@
       </div>
     </div>
     <hr>
-    <div class=" container mt-5">
+    <div class=" container mt-5" id="main-hero">
       <div class="row">
         <div class="col-12 d-flex justify-content-center p-4 text-white">
           <h3 class=" border-bottom">About</h3>
@@ -194,7 +195,7 @@
     </div>
     <footer class=" container-fluid p-3 bg-light align-items-center">
       <div class="row">
-        <div class="col-12 d-flex justify-content-between">
+        <div class="col-12 d-flex justify-content-between align-items-center">
           <div class="col-4">
             <img src="./images/logo.jpg" class="" style=" width: 70px;" alt="">
           </div>
@@ -202,10 +203,10 @@
             <h4>Follow Us On:</h4>
             <ul class=" nav-container list-unstyled d-flex flex-row mt-3 fs-4 justify-content-center">
               <li class=" nav-item m-2">
-                <a href="#" class=" nav-link"><i class=" bi bi-facebook"></i></a>
+                <a href="#main-hero" class=" nav-link"><i class=" bi bi-facebook"></i></a>
               </li>
               <li class=" nav-item m-2">
-                <a href="#" class=" nav-link"> <i class=" bi bi-twitch"></i></a>
+                <a href="#scroll" class=" nav-link"> <i class=" bi bi-twitch"></i></a>
               </li>
               <li class=" nav-item m-2">
                 <a href="#" class=" nav-link"> <i class=" bi bi-twitter"></i></a>
